@@ -1,4 +1,4 @@
-//4. Converter de reais para diversas moedas
+package list_1;//4. Converter de reais para diversas moedas
 
 public class atividade4 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-//6. Calcular o volume de uma piscina
+package list_1;//6. Calcular o volume de uma piscina
 
 public class atividade6 {
     public static void main(String[] args) {
