@@ -19,27 +19,19 @@ public class atividade5 {
 
         if (salario <=faixaUm){
             descontoEmprego = desFaixaUm * salario;
-            System.out.printf("O salário bruto informado foi %.2f reais.%n" +
-                    "O valor de contribuição ao INSS é %.2f reais.",salario,descontoEmprego);
         }else if (salario <= faixaDois){
             calcFaixaDois = (salario - faixaUm)*descFaixaDois;
             descontoEmprego = calUm + calcFaixaDois;
-            System.out.printf("O salário bruto informado foi %.2f reais.%n" +
-                    "O valor de contribuição ao INSS é %.2f reais.",salario,descontoEmprego);
         }else if (salario <= faixaTres){
             calcFaixaTres = (salario - faixaDois)*desFaixaTres;
             descontoEmprego = calUm + calDois + calcFaixaTres;
-            System.out.printf("O salário bruto informado foi %.2f reais.%n" +
-                    "O valor de contribuição ao INSS é %.2f reais.",salario,descontoEmprego);
         }else if (salario <=faixaQuatro){
             calFaixaQuatro = (salario - faixaTres)*desFaixaQuatro;
             descontoEmprego = calUm + calDois + calTres + calFaixaQuatro;
-            System.out.printf("O salário bruto informado foi %.2f reais.%n" +
-                    "O valor de contribuição ao INSS é %.2f reais.",salario,descontoEmprego);
         }else {
             descontoEmprego = calUm + calDois + calTres + tetoMax;
-            System.out.printf("O salário bruto informado foi %.2f reais.%n" +
-                    "O valor de contribuição ao INSS é %.2f reais... TETO MAXIMO",salario,descontoEmprego);
         }
+        System.out.printf("O salário bruto informado foi %.2f reais.%n" +
+                "O valor de contribuição ao INSS é %.2f reais",salario,descontoEmprego);
     }
 }
