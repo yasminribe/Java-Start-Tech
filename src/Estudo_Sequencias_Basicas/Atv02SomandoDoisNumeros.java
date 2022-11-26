@@ -1,3 +1,5 @@
+package Estudo_Sequencias_Basicas;
+
 public class Atv02SomandoDoisNumeros {
     public static void main(String[] args) {
         int numero1 = 8;
