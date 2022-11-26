@@ -6,7 +6,8 @@ public class Atv07ConversordeMedidas {
         double centimetros = metros * 100;
         double milimetro = metros * 1000;
 
-        System.out.printf("A distância de %.1f m corresponde a:%nCentimetros %.1fcm %nMilimetros %.1fmm",metros,centimetros,milimetro);
+        System.out.printf("A distância de %.1f m corresponde a:%nCentimetros %.1fcm " +
+                "%nMilimetros %.1fmm",metros,centimetros,milimetro);
     }
 
 }
