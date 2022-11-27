@@ -8,7 +8,7 @@ public class Atv01RadarEletronico {
         double velocidade;
 
         System.out.print("Digite a velocidade do carro: ");
-        velocidade = scan.nextInt();
+        velocidade = scan.nextDouble();
         double valorMulta = (velocidade - 80) * 5;
 
         if (velocidade > 80){
