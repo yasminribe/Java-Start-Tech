@@ -22,11 +22,11 @@ public class Atv06DescontoMulheres {
 
             if (sexo.equals("F")) {
                 desconto = valorCompra - (valorCompra * 13) / 100;
-                System.out.printf("Bem vinda %s%nValor total R$ %.2f %nO valor total com DESCONTO ESPECIAL " +
+                System.out.printf("Bem vinda %S%nValor total R$ %.2f %nO valor total com DESCONTO ESPECIAL " +
                         "R$ %.2f", nome, valorCompra, desconto);
             } else {
                 desconto = valorCompra - (valorCompra * 5) / 100;
-                System.out.printf("Bem vindo %s%nValor total R$ %.2f %nO valor total com DESCONTO " +
+                System.out.printf("Bem vindo %S%nValor total R$ %.2f %nO valor total com DESCONTO " +
                         "R$ %.2f", nome, valorCompra, desconto);
             }
         }
