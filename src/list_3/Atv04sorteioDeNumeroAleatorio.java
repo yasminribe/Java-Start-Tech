@@ -27,7 +27,6 @@ public class Atv04sorteioDeNumeroAleatorio {
                         quantidadeSorteio, numeroSorteado);
                 break;
             }
-
         }
     }
 }
