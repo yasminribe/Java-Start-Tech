@@ -20,7 +20,7 @@ public class Atv05OcorrenciaLetras {
                     contador++;
                 }
             }
-            System.out.printf("A quantidade de letras %S, na palavra %s é %d", letra, palavra, contador);
+            System.out.printf("Na palavra %s TEM %d letra(s) %S", palavra, contador,letra);
         }
 
     }
