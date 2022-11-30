@@ -5,11 +5,11 @@ import java.util.Random;
 
 public class Atv02CriandoGruposAlunos {
     public static void main(String[] args) {
-        String[] alunos = {"Pedro", "Luan", "Leticia", "Gabriela", "Juan","Bruna","Vanessa","Gustavo","Matheus"};
+        String[] alunos = {"Pedro","Alex", "Leticia", "Gabriela", "Juan","Bruna","Vanessa","Gustavo","Matheus"};
         int qntGrupos = alunos.length / 3;
         String[][] grupos = new String[qntGrupos][3];
 
-        if (alunos.length % 3 != 0) {
+        if (qntGrupos % 3 != 0) {
             System.out.println("Erro! Não foi possivel dividir em grupos de 3.");
         } else {
             System.out.println("Nome dos ALUNOS: " + Arrays.toString(alunos));
