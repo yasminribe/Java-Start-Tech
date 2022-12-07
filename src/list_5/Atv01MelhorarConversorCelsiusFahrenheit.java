@@ -17,24 +17,24 @@ public class Atv01MelhorarConversorCelsiusFahrenheit {
             System.out.print(mensagem);
             graus = scan.nextDouble();
             if (unidade.equals("C")) {
-                System.out.printf("A temperatura informada foi %.1fº%S.\n" +
-                        "Ela equivale a %.1fº Farenheit.", graus, unidade, ConverteFahrenheit(graus));
+                System.out.printf("A temperatura informada foi %.1fº%S.%n" +
+                        "Ela equivale a %.1fº Farenheit.", graus, unidade, ConverteParaFahrenheit(graus));
             } else {
-                System.out.printf("A temperatura informada foi %.1fº%S.\n" +
-                        "Ela equivale a %.1fº Celsius.", graus, unidade, ConverteCelsius(graus));
+                System.out.printf("A temperatura informada foi %.1fº%S.%n" +
+                        "Ela equivale a %.1fº Celsius.", graus, unidade, converteParaCelsius(graus));
             }
         } catch (Error msg) {
             System.out.println("Grau não identificado");
         } catch (Exception e) {
-            System.out.println("Erro, numero invalido");
+            System.out.println("Erro, número invalid");
         }
 
     }
-    static double ConverteCelsius(double fahrenheit) {
+    static double converteParaCelsius(double fahrenheit) {
         return (fahrenheit - 32) * 5 / 9;
     }
 
-    static double ConverteFahrenheit(double Celsius) {
+    static double ConverteParaFahrenheit(double Celsius) {
         return (Celsius * 9 / 5) + 32;
     }
 }
