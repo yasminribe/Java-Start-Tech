@@ -7,7 +7,7 @@ public class JogoDaVelha {
         Scanner teclado = new Scanner(System.in);
         JogoDaVelha jogo = new JogoDaVelha();
         int jogador = 1;
-        int vencedor = jogo.verificarVencedor();
+        int vencedor = verificarVencedor();
         jogo.mostrar();
         while (vencedor == 0){
             System.out.println("Jogador " + jogador);
@@ -21,7 +21,7 @@ public class JogoDaVelha {
                 jogador = (jogador == 1) ? 2 : 1;
             }
             jogo.mostrar();
-            vencedor = jogo.verificarVencedor();
+            vencedor = verificarVencedor();
         }
         switch (vencedor) {
             case 1 -> System.out.println("Vencedor jogador 1");
