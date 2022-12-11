@@ -8,17 +8,17 @@ public class Atv04LacoPeloUsuario {
         System.out.print("Digite numero inicial: ");
         int inicio = scanner.nextInt();
         System.out.print("Digite numero Final: ");
-        int Contagemfinal = scanner.nextInt();
+        int contagemfinal = scanner.nextInt();
         System.out.print("Digite numero de incremento: ");
         int incremento = scanner.nextInt();
 
-        if (inicio <= Contagemfinal) {
-            while (inicio <= Contagemfinal) {
+        if (inicio <= contagemfinal) {
+            while (inicio <= contagemfinal) {
                 System.out.print(inicio + " ");
                 inicio = inicio + incremento;
             }
         } else {
-            while (Contagemfinal <= inicio) {
+            while (contagemfinal <= inicio) {
                 System.out.print(inicio + " ");
                 inicio -= incremento;
             }
