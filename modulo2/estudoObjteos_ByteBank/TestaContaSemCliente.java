@@ -1,4 +1,4 @@
-package estudoByteBank;
+package estudoObjteos_ByteBank;
 
 import estudoOrientacaoAObjeto.Conta;
 
