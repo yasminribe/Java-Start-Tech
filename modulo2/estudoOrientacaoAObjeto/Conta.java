@@ -1,6 +1,6 @@
 package estudoOrientacaoAObjeto;
 
-import estudoByteBank.Cliente;
+import estudoObjteos_ByteBank.Cliente;
 
 public class Conta {
     double saldo;
