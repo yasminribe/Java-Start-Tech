@@ -1,4 +1,4 @@
-package estudoOrientacaoAObjeto;
+package estudoPOO;
 
 public class TesteDeReferencia {
     public static void main(String[] args) {
