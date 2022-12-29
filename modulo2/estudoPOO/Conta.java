@@ -1,9 +1,9 @@
-package estudoOrientacaoAObjeto;
+package estudoPOO;
 
-import estudoObjteos_ByteBank.Cliente;
+import estudoPOO_ByteBank.Cliente;
 
 public class Conta {
-    double saldo;
+    public double saldo;
     int agencia;
     int numero;
     String titular;
