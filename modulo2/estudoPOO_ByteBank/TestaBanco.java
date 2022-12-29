@@ -1,7 +1,7 @@
-package estudoObjteos_ByteBank;
+package estudoPOO_ByteBank;
 
 
-import estudoOrientacaoAObjeto.Conta;
+import estudoPOO.Conta;
 
 public class TestaBanco {
     public static void main(String[] args) {

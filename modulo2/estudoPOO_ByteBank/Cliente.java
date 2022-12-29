@@ -1,4 +1,4 @@
-package estudoObjteos_ByteBank;
+package estudoPOO_ByteBank;
 
 public class Cliente {
     String nome;
