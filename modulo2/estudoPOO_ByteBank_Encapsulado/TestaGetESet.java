@@ -2,7 +2,7 @@ package estudoPOO_ByteBank_Encapsulado;
 
 public class TestaGetESet {
     public static void main(String[] args) {
-        Conta conta = new Conta();
+        Conta conta = new Conta(1335,10152);
         // conta.numero = 1335; não compila
 
         conta.setNumero(133790);

@@ -7,20 +7,31 @@ public class Conta {
     private int numero;
     private Cliente titular;
 
+    private static int total; // quando coloca static no atributo, passa pertencer a classe não ao objeto
+
+    public Conta(int agencia, int numero) {
+        total++;
+        System.out.println("o total de contas criadas: " + total);
+        this.agencia = agencia;
+        this.numero = numero;
+    }
+
+
     //sem retorno
-    public void deposita(double valor){
+    public void deposita(double valor) {
         this.saldo += valor;
     }
 
-   public boolean saca(double valor) {
-       if (this.saldo >= valor) {
-           this.saldo -= valor;
-           return true;
-       }
-       return false;
+    public boolean saca(double valor) {
+        if (this.saldo >= valor) {
+            this.saldo -= valor;
+            return true;
+        }
+        return false;
     }
-    public boolean transfere(double valor, Conta destino){
-        if (this.saldo >= valor){
+
+    public boolean transfere(double valor, Conta destino) {
+        if (this.saldo >= valor) {
             saca(valor);
             destino.deposita(valor);
             return true;
@@ -37,6 +48,10 @@ public class Conta {
     }
 
     public void setNumero(int numero) {
+        if (numero <= 0) {
+            System.out.println("Erro, número da conta invalido");
+            return;
+        }
         this.numero = numero;
     }
 
@@ -45,6 +60,10 @@ public class Conta {
     }
 
     public void setAgencia(int agencia) {
+        if (agencia <= 0) {
+            System.out.println("Error, agencia invalida");
+            return;
+        }
         this.agencia = agencia;
     }
 
@@ -54,6 +73,10 @@ public class Conta {
 
     public void setTitular(Cliente titular) {
         this.titular = titular;
+    }
+
+    public static int getTotal() {
+        return Conta.total;
     }
 }
 
