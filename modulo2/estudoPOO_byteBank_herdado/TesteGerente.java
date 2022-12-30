@@ -10,6 +10,7 @@ public class TesteGerente {
         System.out.printf("Nome: %s%nCPF: %s%nSalario R$ %.2f%n",gerente.getNome(),gerente.getCpf(),gerente.getSalario());
         gerente.setSenha(5555);
         System.out.println("Senha de autenticação: " +gerente.autentica(5555));
+        System.out.println("Bomificação R$ "+ gerente.getBonificacao());
 
     }
 }
