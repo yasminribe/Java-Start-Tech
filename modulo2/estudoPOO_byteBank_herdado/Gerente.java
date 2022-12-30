@@ -8,7 +8,7 @@ public class Gerente extends Funcionario{
 
     }
     public double getBonificacao(){
-        return super.getBonificao() + super.getSalario(); //super quando vem de outra classe
+        return super.getBonificacao() + super.getSalario(); //super quando vem de outra classe
     }
 
     public int getSenha() {

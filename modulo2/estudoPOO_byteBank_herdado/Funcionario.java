@@ -7,7 +7,7 @@ public class Funcionario {
     //protected double salario; apenas visivel para a prorpria classe e os filhos
 
 
-    public double getBonificao(){
+    public double getBonificacao(){
         return this.getSalario()*0.1;
     }
 

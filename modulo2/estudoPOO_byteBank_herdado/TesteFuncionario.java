@@ -9,6 +9,6 @@ public class TesteFuncionario {
         System.out.println(funcionario.getNome());
         System.out.println(funcionario.getCpf());
         System.out.println(funcionario.getSalario());
-        System.out.println(funcionario.getBonificao());
+        System.out.println(funcionario.getBonificacao());
     }
 }
