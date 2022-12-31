@@ -1,11 +1,12 @@
 package estudoPOO_byteBank_herdado;
-//gerente é um funcionario --- gerente herda da classe funcionario
-public class Gerente extends Funcionario implements Autenticador{
 
-    public double getBonificacao(){
-        return super.getSalario(); //super quando vem de outra classe
+public class Administrador extends Funcionario implements Autenticador {
+    @Override
+    public double getBonificacao() {
+        return 50;
     }
-private int senha;
+
+    private int senha;
     @Override
     public int setSenha(int senha) {
         return this.senha = senha;
@@ -20,4 +21,3 @@ private int senha;
         }
     }
 }
-
