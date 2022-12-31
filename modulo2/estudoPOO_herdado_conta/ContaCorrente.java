@@ -1,0 +1,13 @@
+package estudoPOO_herdado_conta;
+
+public class ContaCorrente extends Conta {
+    public ContaCorrente(int agencia, int numero) {
+        super(agencia, numero);
+    }
+
+    @Override //é importante utilizarmos o @Override,
+    // assim, o compilador sabe que a intenção é de sobrescrever o método
+    public boolean saca(double valor) {
+        return super.saca(valor + 0.20);
+    }
+}
