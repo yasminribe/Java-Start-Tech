@@ -11,17 +11,16 @@ public class TesteReferencias {
         Gerente g2 = new Gerente();
         g2.setNome("Marcos");
         g2.setSalario(5000.0);
-
-        Funcionario f1 = new Funcionario();
-        f1.setNome("Pedro");
-        f1.setSalario(3000);
+//        Funcionario f1 = new Funcionario();   não pode instanciar/ criar objetos dessa classe ela não funciona mais pois funcionario é abstrac
+//        f1.setNome("Pedro");
+//        f1.setSalario(3000);
 
         EditorVideo editor = new EditorVideo();
         editor.setSalario(2000);
 
         ControleBonificacao controle = new ControleBonificacao();
         controle.registra(g2);
-        controle.registra(f1);
+//        controle.registra(f1);
         controle.registra(editor);
         System.out.println(controle.getSoma());
     }

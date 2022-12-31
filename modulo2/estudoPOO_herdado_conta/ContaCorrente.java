@@ -5,6 +5,11 @@ public class ContaCorrente extends Conta {
         super(agencia, numero);
     }
 
+    @Override
+    public void deposita(double valor) {
+        super.saldo += valor;
+    }
+
     @Override //é importante utilizarmos o @Override,
     // assim, o compilador sabe que a intenção é de sobrescrever o método
     public boolean saca(double valor) {

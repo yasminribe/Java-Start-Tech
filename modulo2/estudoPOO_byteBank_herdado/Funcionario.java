@@ -1,15 +1,13 @@
 package estudoPOO_byteBank_herdado;
 
-public class Funcionario {
+public abstract class Funcionario {
     private String nome;
     private String cpf;
     private double salario;
     //protected double salario; apenas visivel para a prorpria classe e os filhos
 
-
-    public double getBonificacao(){
-        return this.getSalario()*0.1;
-    }
+// metodo sem corpo , não tem implementação
+    public abstract double getBonificacao();
 
     public String getNome() {
         return nome;

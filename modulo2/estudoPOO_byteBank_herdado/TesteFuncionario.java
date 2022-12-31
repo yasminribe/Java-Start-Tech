@@ -2,7 +2,7 @@ package estudoPOO_byteBank_herdado;
 
 public class TesteFuncionario {
     public static void main(String[] args) {
-        Funcionario funcionario = new Funcionario();
+        Gerente funcionario = new Gerente();
         funcionario.setNome("nico");
         funcionario.setCpf("446.658.589.11");
         funcionario.setSalario(2200);
