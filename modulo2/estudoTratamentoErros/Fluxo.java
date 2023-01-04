@@ -6,16 +6,16 @@ public class Fluxo {
         System.out.println("Ini do main");
         try {
 
-        metodo1();
-        }catch (ArithmeticException | NullPointerException e) {
-           String msg = e.getMessage(); //mostra a msg de erro que foi gerada
-            System.out.println("Exception"+ msg);
+            metodo1();
+        } catch (ArithmeticException | NullPointerException e) {
+            String msg = e.getMessage(); //mostra a msg de erro que foi gerada
+            System.out.println("Exception" + msg);
 //            e.printStackTrace(); mostra o rastro da pilha onde foi dado o erro
 //        }catch ( NullPointerException e){
 //            System.out.println("NullPointerException");
-      }
-     System.out.println("Fim do main");
- }
+        }
+        System.out.println("Fim do main");
+    }
 
 
     private static void metodo1() {
