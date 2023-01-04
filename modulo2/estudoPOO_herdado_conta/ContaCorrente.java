@@ -12,7 +12,7 @@ public class ContaCorrente extends Conta {
 
     @Override //é importante utilizarmos o @Override,
     // assim, o compilador sabe que a intenção é de sobrescrever o método
-    public boolean saca(double valor) {
-        return super.saca(valor + 0.20);
+    public void saca(double valor) throws SaldoInsuficienteException {
+        super.saca(valor + 0.20);
     }
 }

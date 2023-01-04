@@ -1,7 +1,8 @@
 package estudoTratamentoErros;
 
-public class Conta {
-    void deposita(){
+public class Conta extends Exception {
+    void deposita() throws MinhaExcecao{
 
     }
+
 }
